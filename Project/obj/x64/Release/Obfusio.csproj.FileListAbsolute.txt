@@ -1,0 +1,10 @@
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\Obfusio.csproj.AssemblyReference.cache
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\Obfusio.csproj.CoreCompileInputs.cache
+C:\Users\bolog\Desktop\Obfusio\Obfusio\bin\x64\Release\Obfusio.exe.config
+C:\Users\bolog\Desktop\Obfusio\Obfusio\bin\x64\Release\Obfusio.exe
+C:\Users\bolog\Desktop\Obfusio\Obfusio\bin\x64\Release\Guna.UI2.dll
+C:\Users\bolog\Desktop\Obfusio\Obfusio\bin\x64\Release\MetroSuite 2.0.dll
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\MainForm.resources
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\Obfusio.csproj.GenerateResource.cache
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\Obfusio.csproj.Up2Date
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\Obfusio.exe
