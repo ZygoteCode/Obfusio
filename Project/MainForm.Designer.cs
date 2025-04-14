@@ -21,6 +21,14 @@
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2CheckBox16 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox15 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox14 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox13 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox12 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox11 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox10 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox9 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2CheckBox8 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2CheckBox7 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.guna2CheckBox6 = new Guna.UI2.WinForms.Guna2CheckBox();
@@ -37,14 +45,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
-            this.guna2CheckBox9 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox10 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox11 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox12 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox13 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox14 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox15 = new Guna.UI2.WinForms.Guna2CheckBox();
-            this.guna2CheckBox16 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.guna2CheckBox17 = new Guna.UI2.WinForms.Guna2CheckBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,6 +149,7 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.guna2CheckBox17);
             this.panel1.Controls.Add(this.guna2CheckBox16);
             this.panel1.Controls.Add(this.guna2CheckBox15);
             this.panel1.Controls.Add(this.guna2CheckBox14);
@@ -168,6 +170,190 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(515, 308);
             this.panel1.TabIndex = 4;
+            // 
+            // guna2CheckBox16
+            // 
+            this.guna2CheckBox16.Animated = true;
+            this.guna2CheckBox16.AutoSize = true;
+            this.guna2CheckBox16.Checked = true;
+            this.guna2CheckBox16.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox16.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox16.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox16.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox16.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
+            this.guna2CheckBox16.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox16.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
+            this.guna2CheckBox16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.guna2CheckBox16.Location = new System.Drawing.Point(201, 175);
+            this.guna2CheckBox16.Name = "guna2CheckBox16";
+            this.guna2CheckBox16.Size = new System.Drawing.Size(244, 24);
+            this.guna2CheckBox16.TabIndex = 15;
+            this.guna2CheckBox16.Text = "Control Flow Obfuscation";
+            this.guna2CheckBox16.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox16.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox16.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox16.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            // 
+            // guna2CheckBox15
+            // 
+            this.guna2CheckBox15.Animated = true;
+            this.guna2CheckBox15.AutoSize = true;
+            this.guna2CheckBox15.Checked = true;
+            this.guna2CheckBox15.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox15.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox15.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox15.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox15.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
+            this.guna2CheckBox15.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox15.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
+            this.guna2CheckBox15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.guna2CheckBox15.Location = new System.Drawing.Point(14, 175);
+            this.guna2CheckBox15.Name = "guna2CheckBox15";
+            this.guna2CheckBox15.Size = new System.Drawing.Size(181, 24);
+            this.guna2CheckBox15.TabIndex = 14;
+            this.guna2CheckBox15.Text = "Anti Manipulation";
+            this.guna2CheckBox15.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox15.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox15.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox15.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            // 
+            // guna2CheckBox14
+            // 
+            this.guna2CheckBox14.Animated = true;
+            this.guna2CheckBox14.AutoSize = true;
+            this.guna2CheckBox14.Checked = true;
+            this.guna2CheckBox14.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox14.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox14.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox14.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox14.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
+            this.guna2CheckBox14.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox14.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
+            this.guna2CheckBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.guna2CheckBox14.Location = new System.Drawing.Point(183, 148);
+            this.guna2CheckBox14.Name = "guna2CheckBox14";
+            this.guna2CheckBox14.Size = new System.Drawing.Size(172, 24);
+            this.guna2CheckBox14.TabIndex = 13;
+            this.guna2CheckBox14.Text = "Calls Protection";
+            this.guna2CheckBox14.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox14.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox14.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox14.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            // 
+            // guna2CheckBox13
+            // 
+            this.guna2CheckBox13.Animated = true;
+            this.guna2CheckBox13.AutoSize = true;
+            this.guna2CheckBox13.Checked = true;
+            this.guna2CheckBox13.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox13.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox13.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox13.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox13.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
+            this.guna2CheckBox13.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox13.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
+            this.guna2CheckBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.guna2CheckBox13.Location = new System.Drawing.Point(14, 148);
+            this.guna2CheckBox13.Name = "guna2CheckBox13";
+            this.guna2CheckBox13.Size = new System.Drawing.Size(163, 24);
+            this.guna2CheckBox13.TabIndex = 12;
+            this.guna2CheckBox13.Text = "Stack Underflow";
+            this.guna2CheckBox13.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox13.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox13.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox13.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            // 
+            // guna2CheckBox12
+            // 
+            this.guna2CheckBox12.Animated = true;
+            this.guna2CheckBox12.AutoSize = true;
+            this.guna2CheckBox12.Checked = true;
+            this.guna2CheckBox12.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox12.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox12.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox12.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox12.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
+            this.guna2CheckBox12.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox12.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
+            this.guna2CheckBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.guna2CheckBox12.Location = new System.Drawing.Point(210, 121);
+            this.guna2CheckBox12.Name = "guna2CheckBox12";
+            this.guna2CheckBox12.Size = new System.Drawing.Size(163, 24);
+            this.guna2CheckBox12.TabIndex = 11;
+            this.guna2CheckBox12.Text = "Constant Melter";
+            this.guna2CheckBox12.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox12.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox12.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox12.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            // 
+            // guna2CheckBox11
+            // 
+            this.guna2CheckBox11.Animated = true;
+            this.guna2CheckBox11.AutoSize = true;
+            this.guna2CheckBox11.Checked = true;
+            this.guna2CheckBox11.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox11.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox11.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox11.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox11.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
+            this.guna2CheckBox11.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox11.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
+            this.guna2CheckBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.guna2CheckBox11.Location = new System.Drawing.Point(14, 121);
+            this.guna2CheckBox11.Name = "guna2CheckBox11";
+            this.guna2CheckBox11.Size = new System.Drawing.Size(190, 24);
+            this.guna2CheckBox11.TabIndex = 10;
+            this.guna2CheckBox11.Text = "Strings Encryption";
+            this.guna2CheckBox11.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox11.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox11.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox11.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            // 
+            // guna2CheckBox10
+            // 
+            this.guna2CheckBox10.Animated = true;
+            this.guna2CheckBox10.AutoSize = true;
+            this.guna2CheckBox10.Checked = true;
+            this.guna2CheckBox10.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox10.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox10.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox10.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox10.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
+            this.guna2CheckBox10.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox10.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
+            this.guna2CheckBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.guna2CheckBox10.Location = new System.Drawing.Point(210, 94);
+            this.guna2CheckBox10.Name = "guna2CheckBox10";
+            this.guna2CheckBox10.Size = new System.Drawing.Size(199, 24);
+            this.guna2CheckBox10.TabIndex = 9;
+            this.guna2CheckBox10.Text = "Constants Confusion";
+            this.guna2CheckBox10.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox10.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox10.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox10.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            // 
+            // guna2CheckBox9
+            // 
+            this.guna2CheckBox9.Animated = true;
+            this.guna2CheckBox9.AutoSize = true;
+            this.guna2CheckBox9.Checked = true;
+            this.guna2CheckBox9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox9.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox9.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox9.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox9.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
+            this.guna2CheckBox9.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox9.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
+            this.guna2CheckBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.guna2CheckBox9.Location = new System.Drawing.Point(14, 94);
+            this.guna2CheckBox9.Name = "guna2CheckBox9";
+            this.guna2CheckBox9.Size = new System.Drawing.Size(190, 24);
+            this.guna2CheckBox9.TabIndex = 8;
+            this.guna2CheckBox9.Text = "Number Obfuscation";
+            this.guna2CheckBox9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox9.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox9.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox9.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             // 
             // guna2CheckBox8
             // 
@@ -462,189 +648,28 @@
             // 
             this.saveFileDialog2.Filter = "DLL file (*.dll)|*.dll";
             // 
-            // guna2CheckBox9
+            // guna2CheckBox17
             // 
-            this.guna2CheckBox9.Animated = true;
-            this.guna2CheckBox9.AutoSize = true;
-            this.guna2CheckBox9.Checked = true;
-            this.guna2CheckBox9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox9.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox9.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox9.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox9.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
-            this.guna2CheckBox9.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox9.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
-            this.guna2CheckBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.guna2CheckBox9.Location = new System.Drawing.Point(14, 94);
-            this.guna2CheckBox9.Name = "guna2CheckBox9";
-            this.guna2CheckBox9.Size = new System.Drawing.Size(190, 24);
-            this.guna2CheckBox9.TabIndex = 8;
-            this.guna2CheckBox9.Text = "Number Obfuscation";
-            this.guna2CheckBox9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox9.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox9.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox9.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            // 
-            // guna2CheckBox10
-            // 
-            this.guna2CheckBox10.Animated = true;
-            this.guna2CheckBox10.AutoSize = true;
-            this.guna2CheckBox10.Checked = true;
-            this.guna2CheckBox10.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox10.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox10.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox10.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox10.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
-            this.guna2CheckBox10.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox10.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
-            this.guna2CheckBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.guna2CheckBox10.Location = new System.Drawing.Point(210, 94);
-            this.guna2CheckBox10.Name = "guna2CheckBox10";
-            this.guna2CheckBox10.Size = new System.Drawing.Size(199, 24);
-            this.guna2CheckBox10.TabIndex = 9;
-            this.guna2CheckBox10.Text = "Constants Confusion";
-            this.guna2CheckBox10.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox10.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox10.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox10.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            // 
-            // guna2CheckBox11
-            // 
-            this.guna2CheckBox11.Animated = true;
-            this.guna2CheckBox11.AutoSize = true;
-            this.guna2CheckBox11.Checked = true;
-            this.guna2CheckBox11.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox11.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox11.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox11.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox11.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
-            this.guna2CheckBox11.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox11.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
-            this.guna2CheckBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.guna2CheckBox11.Location = new System.Drawing.Point(14, 121);
-            this.guna2CheckBox11.Name = "guna2CheckBox11";
-            this.guna2CheckBox11.Size = new System.Drawing.Size(190, 24);
-            this.guna2CheckBox11.TabIndex = 10;
-            this.guna2CheckBox11.Text = "Strings Encryption";
-            this.guna2CheckBox11.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox11.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox11.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox11.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            // 
-            // guna2CheckBox12
-            // 
-            this.guna2CheckBox12.Animated = true;
-            this.guna2CheckBox12.AutoSize = true;
-            this.guna2CheckBox12.Checked = true;
-            this.guna2CheckBox12.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox12.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox12.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox12.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox12.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
-            this.guna2CheckBox12.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox12.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
-            this.guna2CheckBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.guna2CheckBox12.Location = new System.Drawing.Point(210, 121);
-            this.guna2CheckBox12.Name = "guna2CheckBox12";
-            this.guna2CheckBox12.Size = new System.Drawing.Size(163, 24);
-            this.guna2CheckBox12.TabIndex = 11;
-            this.guna2CheckBox12.Text = "Constant Melter";
-            this.guna2CheckBox12.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox12.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox12.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox12.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            // 
-            // guna2CheckBox13
-            // 
-            this.guna2CheckBox13.Animated = true;
-            this.guna2CheckBox13.AutoSize = true;
-            this.guna2CheckBox13.Checked = true;
-            this.guna2CheckBox13.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox13.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox13.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox13.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox13.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
-            this.guna2CheckBox13.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox13.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
-            this.guna2CheckBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.guna2CheckBox13.Location = new System.Drawing.Point(14, 148);
-            this.guna2CheckBox13.Name = "guna2CheckBox13";
-            this.guna2CheckBox13.Size = new System.Drawing.Size(163, 24);
-            this.guna2CheckBox13.TabIndex = 12;
-            this.guna2CheckBox13.Text = "Stack Underflow";
-            this.guna2CheckBox13.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox13.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox13.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox13.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            // 
-            // guna2CheckBox14
-            // 
-            this.guna2CheckBox14.Animated = true;
-            this.guna2CheckBox14.AutoSize = true;
-            this.guna2CheckBox14.Checked = true;
-            this.guna2CheckBox14.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox14.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox14.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox14.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox14.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
-            this.guna2CheckBox14.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox14.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
-            this.guna2CheckBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.guna2CheckBox14.Location = new System.Drawing.Point(183, 148);
-            this.guna2CheckBox14.Name = "guna2CheckBox14";
-            this.guna2CheckBox14.Size = new System.Drawing.Size(172, 24);
-            this.guna2CheckBox14.TabIndex = 13;
-            this.guna2CheckBox14.Text = "Calls Protection";
-            this.guna2CheckBox14.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox14.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox14.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox14.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            // 
-            // guna2CheckBox15
-            // 
-            this.guna2CheckBox15.Animated = true;
-            this.guna2CheckBox15.AutoSize = true;
-            this.guna2CheckBox15.Checked = true;
-            this.guna2CheckBox15.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox15.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox15.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox15.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox15.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
-            this.guna2CheckBox15.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox15.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
-            this.guna2CheckBox15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.guna2CheckBox15.Location = new System.Drawing.Point(14, 175);
-            this.guna2CheckBox15.Name = "guna2CheckBox15";
-            this.guna2CheckBox15.Size = new System.Drawing.Size(181, 24);
-            this.guna2CheckBox15.TabIndex = 14;
-            this.guna2CheckBox15.Text = "Anti Manipulation";
-            this.guna2CheckBox15.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox15.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox15.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox15.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            // 
-            // guna2CheckBox16
-            // 
-            this.guna2CheckBox16.Animated = true;
-            this.guna2CheckBox16.AutoSize = true;
-            this.guna2CheckBox16.Checked = true;
-            this.guna2CheckBox16.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox16.CheckedState.BorderRadius = 0;
-            this.guna2CheckBox16.CheckedState.BorderThickness = 0;
-            this.guna2CheckBox16.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox16.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
-            this.guna2CheckBox16.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.guna2CheckBox16.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
-            this.guna2CheckBox16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.guna2CheckBox16.Location = new System.Drawing.Point(201, 175);
-            this.guna2CheckBox16.Name = "guna2CheckBox16";
-            this.guna2CheckBox16.Size = new System.Drawing.Size(244, 24);
-            this.guna2CheckBox16.TabIndex = 15;
-            this.guna2CheckBox16.Text = "Control Flow Obfuscation";
-            this.guna2CheckBox16.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.guna2CheckBox16.UncheckedState.BorderRadius = 0;
-            this.guna2CheckBox16.UncheckedState.BorderThickness = 0;
-            this.guna2CheckBox16.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox17.Animated = true;
+            this.guna2CheckBox17.AutoSize = true;
+            this.guna2CheckBox17.Checked = true;
+            this.guna2CheckBox17.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox17.CheckedState.BorderRadius = 0;
+            this.guna2CheckBox17.CheckedState.BorderThickness = 0;
+            this.guna2CheckBox17.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox17.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(107)))), ((int)(((byte)(227)))));
+            this.guna2CheckBox17.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.guna2CheckBox17.Font = new System.Drawing.Font("Cascadia Code", 11.25F);
+            this.guna2CheckBox17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.guna2CheckBox17.Location = new System.Drawing.Point(14, 202);
+            this.guna2CheckBox17.Name = "guna2CheckBox17";
+            this.guna2CheckBox17.Size = new System.Drawing.Size(163, 24);
+            this.guna2CheckBox17.TabIndex = 16;
+            this.guna2CheckBox17.Text = "Anti Decompiler";
+            this.guna2CheckBox17.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.guna2CheckBox17.UncheckedState.BorderRadius = 0;
+            this.guna2CheckBox17.UncheckedState.BorderThickness = 0;
+            this.guna2CheckBox17.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             // 
             // MainForm
             // 
@@ -712,4 +737,5 @@
     private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox14;
     private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox15;
     private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox16;
+    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox17;
 }

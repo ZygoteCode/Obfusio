@@ -103,6 +103,7 @@
     <Compile Include="Obfusio Core\Control Flow Obfuscation\ControlFlowObfuscation.cs" />
     <Compile Include="Obfusio Core\Core.cs" />
     <Compile Include="Obfusio Core\Protections\AntiDe4Dot.cs" />
+    <Compile Include="Obfusio Core\Protections\AntiDecompiler.cs" />
     <Compile Include="Obfusio Core\Protections\AntiILDasm.cs" />
     <Compile Include="Obfusio Core\Protections\AntiManipulation.cs" />
     <Compile Include="Obfusio Core\Protections\ConstantMelter.cs" />

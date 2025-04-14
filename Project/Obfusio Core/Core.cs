@@ -7,7 +7,7 @@ using AsmResolver.DotNet;
 
 public class Core
 {
-    public static void Protect(string inputFilePath, string outputFilePath, bool renamer, bool fakeAttributes, bool antiILDasm, bool antiDe4Dot, bool importProtection, bool moveEntryPoint, bool integerConfusion, bool opcodesProtection, bool numberObfuscation, bool constantsConfusion, bool stringEncryption, bool constantMelter, bool stackUnderflow, bool limitedCallProtection, bool antiManipulation, bool controlFlowObfuscation)
+    public static void Protect(string inputFilePath, string outputFilePath, bool renamer, bool fakeAttributes, bool antiILDasm, bool antiDe4Dot, bool importProtection, bool moveEntryPoint, bool integerConfusion, bool opcodesProtection, bool numberObfuscation, bool constantsConfusion, bool stringEncryption, bool constantMelter, bool stackUnderflow, bool limitedCallProtection, bool antiManipulation, bool controlFlowObfuscation, bool antiDecompiler)
     {
         ModuleDefMD module = ModuleDefMD.Load(inputFilePath);
         ModuleWriterOptions options = new ModuleWriterOptions(module);
@@ -34,6 +34,11 @@ public class Core
         if (antiDe4Dot)
         {
             AntiDe4Dot.Process(module);
+        }
+
+        if (antiDecompiler)
+        {
+            AntiDecompiler.Process(module);
         }
 
         if (numberObfuscation)

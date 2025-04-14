@@ -73,7 +73,7 @@ public partial class MainForm : MetroForm
 
             if (saveFileDialog1.ShowDialog().Equals(DialogResult.OK))
             {
-                Core.Protect(guna2TextBox1.Text, saveFileDialog1.FileName, guna2CheckBox1.Checked, guna2CheckBox2.Checked, guna2CheckBox3.Checked, guna2CheckBox4.Checked, guna2CheckBox5.Checked, guna2CheckBox6.Checked, guna2CheckBox7.Checked, guna2CheckBox8.Checked, guna2CheckBox9.Checked, guna2CheckBox10.Checked, guna2CheckBox11.Checked, guna2CheckBox12.Checked, guna2CheckBox13.Checked, guna2CheckBox14.Checked, guna2CheckBox15.Checked, guna2CheckBox16.Checked);
+                Core.Protect(guna2TextBox1.Text, saveFileDialog1.FileName, guna2CheckBox1.Checked, guna2CheckBox2.Checked, guna2CheckBox3.Checked, guna2CheckBox4.Checked, guna2CheckBox5.Checked, guna2CheckBox6.Checked, guna2CheckBox7.Checked, guna2CheckBox8.Checked, guna2CheckBox9.Checked, guna2CheckBox10.Checked, guna2CheckBox11.Checked, guna2CheckBox12.Checked, guna2CheckBox13.Checked, guna2CheckBox14.Checked, guna2CheckBox15.Checked, guna2CheckBox16.Checked, guna2CheckBox17.Checked);
             }
         }
         else
@@ -82,7 +82,7 @@ public partial class MainForm : MetroForm
 
             if (saveFileDialog2.ShowDialog().Equals(DialogResult.OK))
             {
-                Core.Protect(guna2TextBox1.Text, saveFileDialog2.FileName, guna2CheckBox1.Checked, guna2CheckBox2.Checked, guna2CheckBox3.Checked, guna2CheckBox4.Checked, guna2CheckBox5.Checked, guna2CheckBox6.Checked, guna2CheckBox7.Checked, guna2CheckBox8.Checked, guna2CheckBox9.Checked, guna2CheckBox10.Checked, guna2CheckBox11.Checked, guna2CheckBox12.Checked, guna2CheckBox13.Checked, guna2CheckBox14.Checked, guna2CheckBox15.Checked, guna2CheckBox16.Checked);
+                Core.Protect(guna2TextBox1.Text, saveFileDialog2.FileName, guna2CheckBox1.Checked, guna2CheckBox2.Checked, guna2CheckBox3.Checked, guna2CheckBox4.Checked, guna2CheckBox5.Checked, guna2CheckBox6.Checked, guna2CheckBox7.Checked, guna2CheckBox8.Checked, guna2CheckBox9.Checked, guna2CheckBox10.Checked, guna2CheckBox11.Checked, guna2CheckBox12.Checked, guna2CheckBox13.Checked, guna2CheckBox14.Checked, guna2CheckBox15.Checked, guna2CheckBox16.Checked, guna2CheckBox17.Checked);
             }
         }
 
