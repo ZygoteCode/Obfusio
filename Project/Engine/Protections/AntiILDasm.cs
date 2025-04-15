@@ -1,9 +1,12 @@
 ﻿using dnlib.DotNet;
 
-public class AntiILDasm
+namespace Obfusio.Engine.Protections
 {
-    public static void Process(ModuleDefMD module)
+    public class AntiILDasm
     {
-        module.CustomAttributes.Add(new CustomAttribute(new MemberRefUser(module, ".ctor", MethodSig.CreateInstance(module.CorLibTypes.Void), module.CorLibTypes.GetTypeRef("System.Runtime.CompilerServices", "SuppressIldasmAttribute"))));
+        public static void Process(ModuleDefMD module)
+        {
+            module.CustomAttributes.Add(new CustomAttribute(new MemberRefUser(module, ".ctor", MethodSig.CreateInstance(module.CorLibTypes.Void), module.CorLibTypes.GetTypeRef("System.Runtime.CompilerServices", "SuppressIldasmAttribute"))));
+        }
     }
 }

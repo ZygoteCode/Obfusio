@@ -3,7 +3,7 @@ using dnlib.DotNet.Emit;
 using System;
 using System.Collections.Generic;
 
-namespace SugarGuard.Protections.ControlFlow
+namespace Obfusio.Engine.SuperControlFlowObfuscation
 {
     internal interface IPredicate
     {

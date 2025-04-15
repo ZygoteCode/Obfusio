@@ -6,6 +6,8 @@ using System;
 using AsmResolver.DotNet;
 using Obfusio.Engine.ControlFlowObfuscation;
 using Obfusio.Engine.Helpers;
+using Obfusio.Engine.Protections;
+using Obfusio.Engine.SuperControlFlowObfuscation;
 
 namespace Obfusio.Engine
 {
@@ -67,7 +69,7 @@ namespace Obfusio.Engine
 
             if (controlFlowObfuscation)
             {
-                SuperControlFlowObfuscation.Process(module);
+                Obfusio.Engine.Protections.SuperControlFlowObfuscation.Process(module);
                 BlockProcessor.Process(module);
             }
 
@@ -118,7 +120,7 @@ namespace Obfusio.Engine
 
             byte[] theBytes = System.IO.File.ReadAllBytes(outputFilePath);
             System.IO.File.Delete(outputFilePath);
-            System.IO.File.WriteAllBytes(outputFilePath, ReplaceBytes(theBytes, Encoding.ASCII.GetBytes("This program cannot be run in DOS mode."), Utils.Random.GetRandomByteArray(39)));
+            System.IO.File.WriteAllBytes(outputFilePath, ReplaceBytes(theBytes, Encoding.ASCII.GetBytes("This program cannot be run in DOS mode."), Obfusio.Engine.Helpers.Utils.Random.GetRandomByteArray(39)));
             byte[] MD5Bytes = System.Security.Cryptography.MD5.Create().ComputeHash(System.IO.File.ReadAllBytes(outputFilePath));
 
             using (FileStream stream = new FileStream(outputFilePath, FileMode.Append))

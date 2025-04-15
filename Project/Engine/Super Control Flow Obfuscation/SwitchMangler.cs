@@ -3,9 +3,9 @@ using dnlib.DotNet.Emit;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using static SugarGuard.Protections.ControlFlow.BlockParser;
+using static Obfusio.Engine.SuperControlFlowObfuscation.BlockParser;
 
-namespace SugarGuard.Protections.ControlFlow
+namespace Obfusio.Engine.SuperControlFlowObfuscation
 {
     internal class SwitchMangler
     {

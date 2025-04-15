@@ -2,9 +2,9 @@
 using dnlib.DotNet.Emit;
 using dnlib.DotNet.Pdb;
 using System.Linq;
-using static SugarGuard.Protections.ControlFlow.BlockParser;
+using static Obfusio.Engine.SuperControlFlowObfuscation.BlockParser;
 
-namespace SugarGuard.Protections.ControlFlow
+namespace Obfusio.Engine.SuperControlFlowObfuscation
 {
     public class ControlFlow
     {

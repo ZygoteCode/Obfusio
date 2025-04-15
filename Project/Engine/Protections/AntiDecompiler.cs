@@ -1,37 +1,40 @@
 ﻿using dnlib.DotNet;
 using dnlib.DotNet.Emit;
 
-public class AntiDecompiler
+namespace Obfusio.Engine.Protections
 {
-    public static void Process(ModuleDefMD module)
+    public class AntiDecompiler
     {
-        AddCrasher(module.GlobalType);
-        AddCrasher(module.EntryPoint.DeclaringType);
-    }
-
-    private static void AddCrasher(TypeDef typeDef)
-    {
-        if (typeDef == null)
+        public static void Process(ModuleDefMD module)
         {
-            return;
+            AddCrasher(module.GlobalType);
+            AddCrasher(module.EntryPoint.DeclaringType);
         }
 
-        MethodDefUser method = new MethodDefUser(
-            "AntiDnSpy",
-            MethodSig.CreateStatic(typeDef.Module.CorLibTypes.Void),
-            MethodImplAttributes.IL | MethodImplAttributes.Managed,
-            MethodAttributes.Public | MethodAttributes.Static);
-
-        typeDef.Methods.Add(method);
-
-        CilBody body = new CilBody();
-        method.Body = body;
-
-        body.Instructions.Add(OpCodes.Ret.ToInstruction());
-
-        for (int i = 0; i < 100000; i++)
+        private static void AddCrasher(TypeDef typeDef)
         {
-            body.Instructions.Insert(0, OpCodes.Nop.ToInstruction());
+            if (typeDef == null)
+            {
+                return;
+            }
+
+            MethodDefUser method = new MethodDefUser(
+                "AntiDnSpy",
+                MethodSig.CreateStatic(typeDef.Module.CorLibTypes.Void),
+                MethodImplAttributes.IL | MethodImplAttributes.Managed,
+                MethodAttributes.Public | MethodAttributes.Static);
+
+            typeDef.Methods.Add(method);
+
+            CilBody body = new CilBody();
+            method.Body = body;
+
+            body.Instructions.Add(OpCodes.Ret.ToInstruction());
+
+            for (int i = 0; i < 100000; i++)
+            {
+                body.Instructions.Insert(0, OpCodes.Nop.ToInstruction());
+            }
         }
     }
 }

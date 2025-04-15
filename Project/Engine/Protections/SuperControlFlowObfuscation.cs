@@ -1,25 +1,27 @@
 ﻿using dnlib.DotNet;
-using System;
 
-public class SuperControlFlowObfuscation
+namespace Obfusio.Engine.Protections
 {
-    public static void Process(ModuleDefMD module)
+    public class SuperControlFlowObfuscation
     {
-        foreach (TypeDef type in module.Types)
+        public static void Process(ModuleDefMD module)
         {
-            foreach (MethodDef method in type.Methods)
+            foreach (TypeDef type in module.Types)
             {
-                if (!method.HasBody)
+                foreach (MethodDef method in type.Methods)
                 {
-                    continue;
-                }
+                    if (!method.HasBody)
+                    {
+                        continue;
+                    }
 
-                if (!method.Body.HasInstructions)
-                {
-                    continue;
-                }
+                    if (!method.Body.HasInstructions)
+                    {
+                        continue;
+                    }
 
-                SugarGuard.Protections.ControlFlow.ControlFlow.PhaseControlFlow(method, module);
+                    Obfusio.Engine.SuperControlFlowObfuscation.ControlFlow.PhaseControlFlow(method, module);
+                }
             }
         }
     }

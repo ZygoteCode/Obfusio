@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SugarGuard.Protections.ControlFlow
+namespace Obfusio.Engine.SuperControlFlowObfuscation
 {
     public static class Utils
     {
