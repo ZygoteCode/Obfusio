@@ -1,5 +1,6 @@
 ﻿using dnlib.DotNet.Emit;
 using dnlib.DotNet;
+using Obfusio.Engine.Helpers;
 
 public class Renamer
 {

@@ -1,10 +1,9 @@
 ﻿using dnlib.DotNet;
 using dnlib.DotNet.Emit;
+using Obfusio.Engine.Helpers;
 
 public class StackUnderflow
 {
-    private static SuperRandom _random = new SuperRandom(2);
-
     public static void Process(ModuleDefMD module)
     {
         foreach (TypeDef type in module.Types)
@@ -21,7 +20,7 @@ public class StackUnderflow
                 Instruction instruction3 = Instruction.Create(OpCodes.Pop);
                 Instruction instruction4;
 
-                switch (_random.GetRandomInt32(0, 5))
+                switch (Utils.Random.GetRandomInt32(0, 5))
                 {
                     case 0:
                         instruction4 = Instruction.Create(OpCodes.Ldnull);
@@ -36,11 +35,11 @@ public class StackUnderflow
                         break;
 
                     case 3:
-                        instruction4 = Instruction.Create(OpCodes.Ldc_I8, (uint)_random.GetRandomUInt64());
+                        instruction4 = Instruction.Create(OpCodes.Ldc_I8, (uint)Utils.Random.GetRandomUInt64());
                         break;
 
                     default:
-                        instruction4 = Instruction.Create(OpCodes.Ldc_I8, (long)_random.GetRandomUInt64());
+                        instruction4 = Instruction.Create(OpCodes.Ldc_I8, (long)Utils.Random.GetRandomUInt64());
                         break;
                 }
 

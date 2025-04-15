@@ -11,7 +11,6 @@ C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\Obfusio.exe
 C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\Obfusio.exe.config
 C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\Obfusio.exe
 C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.csproj.AssemblyReference.cache
-C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\MainForm.resources
 C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.csproj.GenerateResource.cache
 C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.csproj.CoreCompileInputs.cache
 C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.csproj.Up2Date
@@ -27,3 +26,4 @@ C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\dnlib
 C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\MonoMod.Backports.dll
 C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\MonoMod.ILHelpers.dll
 C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.Properties.Resources.resources
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.Main.MainForm.resources

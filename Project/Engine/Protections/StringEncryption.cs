@@ -5,16 +5,16 @@ using System.Collections.Generic;
 using System;
 using System.Text;
 using System.Security.Cryptography;
+using Obfusio.Engine.Helpers;
 
 public static class StringEncryption
 {
     private static string theKey = "";
-    private static SuperRandom _random = new SuperRandom(2);
     private static char[] _characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".ToCharArray();
 
     public static void Process(ModuleDefMD module)
     {
-        theKey = _random.GetRandomString(_characters, _random.GetRandomInt32(8, 16));
+        theKey = Utils.Random.GetRandomString(_characters, Utils.Random.GetRandomInt32(8, 16));
         MethodDef DecryptMethod = Inject(module);
 
         foreach (TypeDef type in module.Types)
@@ -83,8 +83,8 @@ public static class StringEncryption
 
     public static byte[] Encrypt(byte[] input, byte[] password)
     {
-        int keySize1 = _random.GetRandomInt32(5, 16), keySize2 = _random.GetRandomInt32(3, 12);
-        byte[] key1 = _random.GetRandomBytes(keySize1), key2 = _random.GetRandomBytes(keySize2);
+        int keySize1 = Utils.Random.GetRandomInt32(5, 16), keySize2 = Utils.Random.GetRandomInt32(3, 12);
+        byte[] key1 = Utils.Random.GetRandomBytes(keySize1), key2 = Utils.Random.GetRandomBytes(keySize2);
 
         int dataLength = input.Length;
         byte[] dataHash = CalculateMD5(input), completeKey = Combine(key1, key2, password);
@@ -100,8 +100,8 @@ public static class StringEncryption
                 BitConverter.GetBytes(keySize2), key2
             );
 
-        int keySize3 = _random.GetRandomInt32(5, 10);
-        byte[] key3 = _random.GetRandomBytes(keySize3);
+        int keySize3 = Utils.Random.GetRandomInt32(5, 10);
+        byte[] key3 = Utils.Random.GetRandomBytes(keySize3);
 
         newData = EncryptAES256(newData, Combine(password, key3));
         byte[] newEncrypted = Combine(BitConverter.GetBytes(keySize3), key3, newData);

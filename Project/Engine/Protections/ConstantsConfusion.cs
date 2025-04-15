@@ -2,11 +2,10 @@
 using dnlib.DotNet.Emit;
 using System.Collections.Generic;
 using System;
+using Obfusio.Engine.Helpers;
 
 public class ConstantsConfusion
 {
-    private static SuperRandom _random = new SuperRandom(5);
-
     public static void Process(ModuleDefMD module)
     {
         List<MethodDef> toObfuscate = new List<MethodDef>();
@@ -39,7 +38,7 @@ public class ConstantsConfusion
                 {
                     if (method.Body.Instructions[i].OpCode == OpCodes.Ldstr)
                     {
-                        for (int j = 1; j < _random.GetRandomInt32(10, 20); j++)
+                        for (int j = 1; j < Utils.Random.GetRandomInt32(10, 20); j++)
                         {
                             if (j != 1)
                             {
@@ -58,7 +57,7 @@ public class ConstantsConfusion
                     }
                     else if (method.Body.Instructions[i].OpCode == OpCodes.Ldc_I4)
                     {
-                        for (int j = 1; j < _random.GetRandomInt32(10, 20); j++)
+                        for (int j = 1; j < Utils.Random.GetRandomInt32(10, 20); j++)
                         {
                             if (j != 1)
                             {
@@ -77,7 +76,7 @@ public class ConstantsConfusion
                     }
                     else if (method.Body.Instructions[i].OpCode == OpCodes.Ldc_I8)
                     {
-                        for (int j = 1; j < _random.GetRandomInt32(10, 20); j++)
+                        for (int j = 1; j < Utils.Random.GetRandomInt32(10, 20); j++)
                         {
                             if (j != 1)
                             {
@@ -96,7 +95,7 @@ public class ConstantsConfusion
                     }
                     else if (method.Body.Instructions[i].OpCode == OpCodes.Ldc_R4)
                     {
-                        for (int j = 1; j < _random.GetRandomInt32(10, 20); j++)
+                        for (int j = 1; j < Utils.Random.GetRandomInt32(10, 20); j++)
                         {
                             if (j != 1)
                             {
@@ -115,7 +114,7 @@ public class ConstantsConfusion
                     }
                     else if (method.Body.Instructions[i].OpCode == OpCodes.Ldc_R8)
                     {
-                        for (int j = 1; j < _random.GetRandomInt32(10, 20); j++)
+                        for (int j = 1; j < Utils.Random.GetRandomInt32(10, 20); j++)
                         {
                             if (j != 1)
                             {

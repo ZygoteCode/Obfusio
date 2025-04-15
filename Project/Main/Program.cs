@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Obfusio
+namespace Obfusio.Main
 {
     internal static class Program
     {

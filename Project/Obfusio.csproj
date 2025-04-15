@@ -91,45 +91,45 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Main\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Main\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Obfusio Core\Additions\AntiManipulationRuntime.cs" />
-    <Compile Include="Obfusio Core\Control Flow Obfuscation\Block.cs" />
-    <Compile Include="Obfusio Core\Control Flow Obfuscation\BlockParser.cs" />
-    <Compile Include="Obfusio Core\Control Flow Obfuscation\ControlFlowObfuscation.cs" />
-    <Compile Include="Obfusio Core\Core.cs" />
-    <Compile Include="Obfusio Core\Protections\AntiDe4Dot.cs" />
-    <Compile Include="Obfusio Core\Protections\AntiDecompiler.cs" />
-    <Compile Include="Obfusio Core\Protections\AntiILDasm.cs" />
-    <Compile Include="Obfusio Core\Protections\AntiManipulation.cs" />
-    <Compile Include="Obfusio Core\Protections\ConstantMelter.cs" />
-    <Compile Include="Obfusio Core\Protections\ConstantsConfusion.cs" />
-    <Compile Include="Obfusio Core\Protections\FakeAttributes.cs" />
-    <Compile Include="Obfusio Core\Protections\HideStrings.cs" />
-    <Compile Include="Obfusio Core\Protections\ImportProtection.cs" />
-    <Compile Include="Obfusio Core\Protections\LimitedCallProtection.cs" />
-    <Compile Include="Obfusio Core\Protections\LimitedIntegerConfusion.cs" />
-    <Compile Include="Obfusio Core\Protections\MoveEntryPoint.cs" />
-    <Compile Include="Obfusio Core\Protections\NumberObfuscation.cs" />
-    <Compile Include="Obfusio Core\Protections\OpcodesProtection.cs" />
-    <Compile Include="Obfusio Core\Protections\Renamer.cs" />
-    <Compile Include="Obfusio Core\Additions\StringDecryptor.cs" />
-    <Compile Include="Obfusio Core\Protections\StackUnderflow.cs" />
-    <Compile Include="Obfusio Core\Protections\StringEncryption.cs" />
-    <Compile Include="Obfusio Core\Protections\SuperControlFlowObfuscation.cs" />
-    <Compile Include="Obfusio Core\Super Control Flow Obfuscation\ControlFlow.cs" />
-    <Compile Include="Obfusio Core\Super Control Flow Obfuscation\ControlFlowGraph.cs" />
-    <Compile Include="Obfusio Core\Super Control Flow Obfuscation\Predicate.cs" />
-    <Compile Include="Obfusio Core\Super Control Flow Obfuscation\SwitchMangler.cs" />
-    <Compile Include="Obfusio Core\Super Control Flow Obfuscation\Utils.cs" />
-    <Compile Include="Obfusio Core\Utils\InjectHelper.cs" />
-    <Compile Include="Obfusio Core\Utils\SuperRandom.cs" />
-    <Compile Include="Obfusio Core\Utils\Utils.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Engine\Runtime\AntiManipulationRuntime.cs" />
+    <Compile Include="Engine\Control Flow Obfuscation\Block.cs" />
+    <Compile Include="Engine\Control Flow Obfuscation\BlockParser.cs" />
+    <Compile Include="Engine\Control Flow Obfuscation\BlockProcessor.cs" />
+    <Compile Include="Engine\Core.cs" />
+    <Compile Include="Engine\Protections\AntiDe4Dot.cs" />
+    <Compile Include="Engine\Protections\AntiDecompiler.cs" />
+    <Compile Include="Engine\Protections\AntiILDasm.cs" />
+    <Compile Include="Engine\Protections\AntiManipulation.cs" />
+    <Compile Include="Engine\Protections\ConstantMelter.cs" />
+    <Compile Include="Engine\Protections\ConstantsConfusion.cs" />
+    <Compile Include="Engine\Protections\FakeAttributes.cs" />
+    <Compile Include="Engine\Protections\HideStrings.cs" />
+    <Compile Include="Engine\Protections\ImportProtection.cs" />
+    <Compile Include="Engine\Protections\LimitedCallProtection.cs" />
+    <Compile Include="Engine\Protections\LimitedIntegerConfusion.cs" />
+    <Compile Include="Engine\Protections\MoveEntryPoint.cs" />
+    <Compile Include="Engine\Protections\NumberObfuscation.cs" />
+    <Compile Include="Engine\Protections\OpcodesProtection.cs" />
+    <Compile Include="Engine\Protections\Renamer.cs" />
+    <Compile Include="Engine\Runtime\StringDecryptor.cs" />
+    <Compile Include="Engine\Protections\StackUnderflow.cs" />
+    <Compile Include="Engine\Protections\StringEncryption.cs" />
+    <Compile Include="Engine\Protections\SuperControlFlowObfuscation.cs" />
+    <Compile Include="Engine\Super Control Flow Obfuscation\ControlFlow.cs" />
+    <Compile Include="Engine\Super Control Flow Obfuscation\ControlFlowGraph.cs" />
+    <Compile Include="Engine\Super Control Flow Obfuscation\Predicate.cs" />
+    <Compile Include="Engine\Super Control Flow Obfuscation\SwitchMangler.cs" />
+    <Compile Include="Engine\Super Control Flow Obfuscation\Utils.cs" />
+    <Compile Include="Engine\Helpers\InjectHelper.cs" />
+    <Compile Include="Engine\Helpers\SuperRandom.cs" />
+    <Compile Include="Engine\Helpers\Utils.cs" />
+    <Compile Include="Main\Program.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -141,7 +141,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Main\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

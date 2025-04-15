@@ -1,19 +1,21 @@
-﻿partial class MainForm
+﻿namespace Obfusio.Main
 {
-    private System.ComponentModel.IContainer components = null;
-
-    protected override void Dispose(bool disposing)
+    partial class MainForm
     {
-        if (disposing && (components != null))
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
         {
-            components.Dispose();
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+
+            base.Dispose(disposing);
         }
 
-        base.Dispose(disposing);
-    }
-
-    private void InitializeComponent()
-    {
+        private void InitializeComponent()
+        {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -705,37 +707,38 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
-    }
+        }
 
-    private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-    private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-    private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-    private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-    private System.Windows.Forms.OpenFileDialog openFileDialog1;
-    private System.Windows.Forms.Panel panel1;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
-    private System.Windows.Forms.Label label1;
-    private System.Windows.Forms.Label label2;
-    private System.Windows.Forms.Label label3;
-    private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-    private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
-    private System.Windows.Forms.Label label4;
-    private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-    private System.Windows.Forms.SaveFileDialog saveFileDialog2;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox2;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox3;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox4;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox5;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox6;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox7;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox8;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox9;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox10;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox11;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox12;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox13;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox14;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox15;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox16;
-    private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox17;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog2;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox2;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox3;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox4;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox5;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox6;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox7;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox8;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox9;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox10;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox11;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox12;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox13;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox14;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox15;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox16;
+        private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox17;
+    }
 }

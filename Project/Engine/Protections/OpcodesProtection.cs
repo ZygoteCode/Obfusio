@@ -2,11 +2,10 @@
 using dnlib.DotNet;
 using System.Collections.Generic;
 using System.Linq;
+using Obfusio.Engine.Helpers;
 
 public class OpCodesProtection
 {
-    private static SuperRandom _random = new SuperRandom(2);
-
     private static void CtorCallProtection(MethodDef method)
     {
         IList<Instruction> instr = method.Body.Instructions;
@@ -16,10 +15,10 @@ public class OpCodesProtection
             {
                 Local new_local = new Local(method.Module.CorLibTypes.Int32);
                 method.Body.Variables.Add(new_local);
-                instr.Insert(i - 1, OpCodes.Ldc_I4.ToInstruction(_random.GetRandomInt32()));
+                instr.Insert(i - 1, OpCodes.Ldc_I4.ToInstruction(Utils.Random.GetRandomInt32()));
                 instr.Insert(i, OpCodes.Stloc_S.ToInstruction(new_local));
                 instr.Insert(i + 1, OpCodes.Ldloc_S.ToInstruction(new_local));
-                instr.Insert(i + 2, OpCodes.Ldc_I4.ToInstruction(_random.GetRandomInt32()));
+                instr.Insert(i + 2, OpCodes.Ldc_I4.ToInstruction(Utils.Random.GetRandomInt32()));
                 instr.Insert(i + 3, OpCodes.Ldarg_0.ToInstruction());
                 instr.Insert(i + 4, OpCodes.Nop.ToInstruction());
                 instr.Insert(i + 6, OpCodes.Nop.ToInstruction());
@@ -39,10 +38,10 @@ public class OpCodesProtection
             {
                 Local new_local = new Local(method.Module.CorLibTypes.Int32);
                 method.Body.Variables.Add(new_local);
-                instr.Insert(i - 1, OpCodes.Ldc_I4.ToInstruction(_random.GetRandomInt32()));
+                instr.Insert(i - 1, OpCodes.Ldc_I4.ToInstruction(Utils.Random.GetRandomInt32()));
                 instr.Insert(i, OpCodes.Stloc_S.ToInstruction(new_local));
                 instr.Insert(i + 1, OpCodes.Ldloc_S.ToInstruction(new_local));
-                instr.Insert(i + 2, OpCodes.Ldc_I4.ToInstruction(_random.GetRandomInt32()));
+                instr.Insert(i + 2, OpCodes.Ldc_I4.ToInstruction(Utils.Random.GetRandomInt32()));
                 instr.Insert(i + 3, OpCodes.Ldarg_0.ToInstruction());
                 instr.Insert(i + 4, OpCodes.Nop.ToInstruction());
                 instr.Insert(i + 6, OpCodes.Nop.ToInstruction());
@@ -62,10 +61,10 @@ public class OpCodesProtection
             {
                 Local new_local = new Local(method.Module.CorLibTypes.Int32);
                 method.Body.Variables.Add(new_local);
-                instr.Insert(i - 1, OpCodes.Ldc_I4.ToInstruction(_random.GetRandomInt32()));
+                instr.Insert(i - 1, OpCodes.Ldc_I4.ToInstruction(Utils.Random.GetRandomInt32()));
                 instr.Insert(i, OpCodes.Stloc_S.ToInstruction(new_local));
                 instr.Insert(i + 1, OpCodes.Ldloc_S.ToInstruction(new_local));
-                instr.Insert(i + 2, OpCodes.Ldc_I4.ToInstruction(_random.GetRandomInt32()));
+                instr.Insert(i + 2, OpCodes.Ldc_I4.ToInstruction(Utils.Random.GetRandomInt32()));
                 instr.Insert(i + 3, OpCodes.Ldarg_0.ToInstruction());
                 instr.Insert(i + 4, OpCodes.Nop.ToInstruction());
                 instr.Insert(i + 6, OpCodes.Nop.ToInstruction());

@@ -2,11 +2,10 @@
 using dnlib.DotNet.Emit;
 using System.Collections.Generic;
 using System;
+using Obfusio.Engine.Helpers;
 
 public class NumberObfuscation
 {
-    private static SuperRandom _random = new SuperRandom(2);
-
     public static void Process(ModuleDefMD module)
     {
         foreach (TypeDef type in module.Types)
@@ -40,9 +39,9 @@ public class NumberObfuscation
     {
         List<Instruction> instructions = new List<Instruction>();
 
-        int num = _random.GetRandomInt32(100000);
-        bool once = _random.GetRandomBoolean();
-        int num1 = _random.GetRandomInt32(100000);
+        int num = Utils.Random.GetRandomInt32(100000);
+        bool once = Utils.Random.GetRandomBoolean();
+        int num1 = Utils.Random.GetRandomInt32(100000);
 
         instructions.Add(Instruction.Create(OpCodes.Ldc_I4, value - num + (once ? (0 - num1) : num1)));
         instructions.Add(Instruction.Create(OpCodes.Ldc_I4, num));

@@ -2,6 +2,7 @@
 using dnlib.DotNet.Emit;
 using System.Collections.Generic;
 using System.Linq;
+using Obfusio.Engine.Helpers;
 
 public class ImportProtection
 {

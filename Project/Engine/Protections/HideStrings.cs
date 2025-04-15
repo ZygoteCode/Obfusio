@@ -1,7 +1,4 @@
-﻿/// Source & Credits to : https://github.com/MrakDev/UnmanagedString/blob/main/src/UnmanagedString/EntryPoint.cs
-
-using System.Linq;
-using System;
+﻿using System.Linq;
 using System.Text;
 using AsmResolver.DotNet;
 using AsmResolver.DotNet.Code.Native;
@@ -11,6 +8,7 @@ using AsmResolver.PE.DotNet.Cil;
 using MethodDefinition = AsmResolver.DotNet.MethodDefinition;
 using ModuleDefinition = AsmResolver.DotNet.ModuleDefinition;
 using AsmResolver.PE.File;
+using Obfusio.Engine.Helpers;
 
 public class HideStrings
 {
