@@ -5,9 +5,7 @@ using System.Text;
 using System;
 using AsmResolver.DotNet;
 using Obfusio.Engine.ControlFlowObfuscation;
-using Obfusio.Engine.Helpers;
 using Obfusio.Engine.Protections;
-using Obfusio.Engine.SuperControlFlowObfuscation;
 
 namespace Obfusio.Engine
 {
