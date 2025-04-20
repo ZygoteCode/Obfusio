@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C553931-C829-43C8-B14C-801D44219C12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Obfusio</RootNamespace>
+    <AssemblyName>Obfusio</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>C_Sharp_Logo_2023.svg.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AsmResolver">
+      <HintPath>..\Libraries\AsmResolver.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.DotNet">
+      <HintPath>..\Libraries\AsmResolver.DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.DotNet.Dynamic">
+      <HintPath>..\Libraries\AsmResolver.DotNet.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.PE">
+      <HintPath>..\Libraries\AsmResolver.PE.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.PE.File">
+      <HintPath>..\Libraries\AsmResolver.PE.File.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.PE.Win32Resources">
+      <HintPath>..\Libraries\AsmResolver.PE.Win32Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="AsmResolver.Symbols.Pdb">
+      <HintPath>..\Libraries\AsmResolver.Symbols.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="dnlib">
+      <HintPath>..\Libraries\dnlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\..\AMD\CSharpBeautifulThemes-main\Libraries\Guna.UI2\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSuite 2.0">
+      <HintPath>..\..\..\..\..\AMD\CSharpBeautifulThemes-main\Libraries\MetroSuite\MetroSuite 2.0.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MonoMod.Backports">
+      <HintPath>..\Libraries\MonoMod.Backports.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.ILHelpers">
+      <HintPath>..\Libraries\MonoMod.ILHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.ValueTuple" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\Runtime\AntiManipulationRuntime.cs" />
+    <Compile Include="Engine\Control Flow Obfuscation\Block.cs" />
+    <Compile Include="Engine\Control Flow Obfuscation\BlockParser.cs" />
+    <Compile Include="Engine\Control Flow Obfuscation\BlockProcessor.cs" />
+    <Compile Include="Engine\Core.cs" />
+    <Compile Include="Engine\Protections\AntiDe4Dot.cs" />
+    <Compile Include="Engine\Protections\AntiDecompiler.cs" />
+    <Compile Include="Engine\Protections\AntiILDasm.cs" />
+    <Compile Include="Engine\Protections\AntiManipulation.cs" />
+    <Compile Include="Engine\Protections\ConstantMelter.cs" />
+    <Compile Include="Engine\Protections\ConstantsConfusion.cs" />
+    <Compile Include="Engine\Protections\FakeAttributes.cs" />
+    <Compile Include="Engine\Protections\HideStrings.cs" />
+    <Compile Include="Engine\Protections\ImportProtection.cs" />
+    <Compile Include="Engine\Protections\LimitedCallProtection.cs" />
+    <Compile Include="Engine\Protections\LimitedIntegerConfusion.cs" />
+    <Compile Include="Engine\Protections\MoveEntryPoint.cs" />
+    <Compile Include="Engine\Protections\NumberObfuscation.cs" />
+    <Compile Include="Engine\Protections\OpcodesProtection.cs" />
+    <Compile Include="Engine\Protections\Renamer.cs" />
+    <Compile Include="Engine\Runtime\StringDecryptor.cs" />
+    <Compile Include="Engine\Protections\StackUnderflow.cs" />
+    <Compile Include="Engine\Protections\StringEncryption.cs" />
+    <Compile Include="Engine\Protections\SuperControlFlowObfuscation.cs" />
+    <Compile Include="Engine\Super Control Flow Obfuscation\ControlFlow.cs" />
+    <Compile Include="Engine\Super Control Flow Obfuscation\ControlFlowGraph.cs" />
+    <Compile Include="Engine\Super Control Flow Obfuscation\Predicate.cs" />
+    <Compile Include="Engine\Super Control Flow Obfuscation\SwitchMangler.cs" />
+    <Compile Include="Engine\Super Control Flow Obfuscation\Utils.cs" />
+    <Compile Include="Engine\Helpers\InjectHelper.cs" />
+    <Compile Include="Engine\Helpers\SuperRandom.cs" />
+    <Compile Include="Engine\Helpers\Utils.cs" />
+    <Compile Include="Main\Program.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="C_Sharp_Logo_2023.svg.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

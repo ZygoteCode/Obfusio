@@ -1,0 +1,9 @@
+https://github.com/ZygoteCode/UnseeSharp/
+https://github.com/noradlb1/Confuser2-Obfuscator
+https://github.com/prowlynx/ProwlynxNET
+https://github.com/SmokeLoader/Xerin-v3.0.0.29
+https://github.com/DosX-dev/Astral-PE
+https://github.com/DestroyerDarkNess/Hydra
+https://github.com/Tomiwa-Ot/Emojify
+https://github.com/Matthew-IE/XObfuscator
+https://github.com/sunnamed434/BitMono

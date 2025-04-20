@@ -1,0 +1,29 @@
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\Obfusio.csproj.AssemblyReference.cache
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\Obfusio.csproj.CoreCompileInputs.cache
+C:\Users\bolog\Desktop\Obfusio\Obfusio\bin\x64\Release\Obfusio.exe.config
+C:\Users\bolog\Desktop\Obfusio\Obfusio\bin\x64\Release\Obfusio.exe
+C:\Users\bolog\Desktop\Obfusio\Obfusio\bin\x64\Release\Guna.UI2.dll
+C:\Users\bolog\Desktop\Obfusio\Obfusio\bin\x64\Release\MetroSuite 2.0.dll
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\MainForm.resources
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\Obfusio.csproj.GenerateResource.cache
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\Obfusio.csproj.Up2Date
+C:\Users\bolog\Desktop\Obfusio\Obfusio\obj\x64\Release\Obfusio.exe
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\Obfusio.exe.config
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\Obfusio.exe
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.csproj.AssemblyReference.cache
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.csproj.GenerateResource.cache
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.csproj.CoreCompileInputs.cache
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.csproj.Up2Date
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.exe
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\AsmResolver.dll
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\AsmResolver.DotNet.dll
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\AsmResolver.DotNet.Dynamic.dll
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\AsmResolver.PE.dll
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\AsmResolver.PE.File.dll
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\AsmResolver.PE.Win32Resources.dll
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\AsmResolver.Symbols.Pdb.dll
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\dnlib.dll
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\MonoMod.Backports.dll
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\bin\x64\Release\MonoMod.ILHelpers.dll
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.Properties.Resources.resources
+C:\Users\bolog\Desktop\GitHub Repositories\Obfusio\Project\obj\x64\Release\Obfusio.Main.MainForm.resources
